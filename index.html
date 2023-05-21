@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ronald Chung">
+    <meta name="description" content="Testing Page for HTML">
+    <title>My First Webpage</title>
+    <link rel="icon" href="WorldWideWeb.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello World</h1>
+        <img src="img/Hello_World.jpg" alt="Hello World Logo" title="Hello World Title" width="820" height="312">
+
+        <nav aria-label="primary-nagvigation">
+            <ul>
+                <li><a href="#FormatText">Foramting Text</a></li>
+                <li><a href="#List">Creating List</a></li>
+                <li><a href="#ExternalLink">Creating Links</a></li>
+                <li><a href="#Image">Adding Image</a></li>
+                <li><a href="#Table">Adding Table</a></li>
+                <li><a href="#Form">Adding Input Form</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <article id="FormatText">
+            <h2>Formating Text</h2>
+            <section>
+                <h3>Using Linebreak instead of paragraph</h3>
+
+                <p>This is using new paragraph</p>
+                <p>Another paragraph</p>
+
+                <p>
+                    content with line break <br>... this is a line break <br>...
+                    second line break <br>&nbsp;&nbsp;&nbsp;Example of indentation
+                </p>
+            </section>
+
+            <section>
+                <h3>Header3 for in content abbreviation</h3>
+                <p>
+                    Showing Example of in content abbreviation <br>This is an example
+                    of <em>Emphasis Element</em> <br>This is an exampe of
+                    <strong>Strong Element</strong> <br>This is an example of
+                    <abbr title="Abbreviation">Abbr</abbr> <br>This is an example of
+                    <mark>highlight</mark> <br>This is an example of time formating
+                    <time datetime="08:00">8 am</time>
+                </p>
+
+                <h3>Header3 for showing address</h3>
+                <p>This is my address:</p>
+                <address>
+                    458 Des Voeux Road West,<br>
+                    Shek Tong Tsui, <br>
+                    Hong Kong
+                </address>
+            </section>
+
+            <section>
+                <h3>Example of using aside</h3>
+                <aside>
+                    <details>
+                        <summary>Aside information in summary</summary>
+                        <p>paragraph to show summary for asside</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+        <!-- This is a comment session -->
+        <hr>
+
+        <article id="List">
+            <h2>Formating List</h2>
+            <section>
+                <h3>Creating an order list</h3>
+                <p>example of order list inside of paragraph</p>
+                <ol>
+                    <li>list number 1</li>
+                    <li>list number 2</li>
+                    <li>list number 3</li>
+                </ol>
+            </section>
+            <section>
+                <h3>Creating an unorder list</h3>
+                <p>example of unorder list</p>
+                <ul>
+                    <li>List with no paragraph</li>
+                    <li>
+                        <p>List with paragraph</p>
+                    </li>
+                    <li>
+                        List with address:
+                        <address>
+                            458 Des Voeux Road West,<br>
+                            Shek Tong Tsui, <br>
+                            Hong Kong
+                        </address>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Creating a description list</h3>
+                <p>example of description list</p>
+                <dl>
+                    <dt>Description Title 1</dt>
+                    <dd>Description content 1</dd>
+                    <dt>Description Title 2</dt>
+                    <dd>Description content 2</dd>
+                </dl>
+            </section>
+        </article>
+        <hr>
+
+        <article id="ExternalLink">
+            <h2>Creating Links</h2>
+            <p>Example of creating links</p>
+            <ul>
+                <li>
+                    A Link to absolute refrence to external link to
+                    <a href="http://validator.w3.org/" target="_blank">Validator</a>
+                </li>
+                <li>
+                    A Link to absolute refrence to external link to
+                    <a href="http://www.google.com">Google</a>
+                </li>
+                <li>
+                    A link to relative refernce to internal link to
+                    <a href="link.html"> More about links </a>
+                </li>
+            </ul>
+        </article>
+        <hr>
+        <article id="Image">
+            <h2>Inserting Image</h2>
+
+            <ul>
+                <li>
+                    Inserting image with figure caption
+                    <figure>
+                        <img src="img/HELLO_WORLD_poster.jpg" alt="Hello World Poster" title="Welcome to Hello World"
+                            width="265" height="374">
+                        <figcaption>Hello World Poster</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    Inserting another image with figure caption with loading lazy
+                    <figure>
+                        <img src="img/another_world.jpeg" alt="Another World" title="Another World" width="310"
+                            height="163" loading="lazy">
+                        <figcaption>Another World</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </article>
+        <hr>
+        <article id="Table">
+            <h2>Inserting a table</h2>
+            <table>
+                <Caption>Table caption</Caption>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><time datetime="08:00">8am</time></td>
+                        <td>Schedule 1</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="11:00">11am</time></td>
+                        <td>Schedule 2</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="12:00">12pm</time></td>
+                        <td>Schedule 3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">All Other Time</td>
+                        <td>Schedule 3</td>
+                    </tr>
+                    <tr>
+                        <td>Schedule 4</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Table Footer with Column span 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <hr>
+
+        <article id="Form">
+            <h2>Example of input form</h2>
+            <p>Please input text below</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Legend for Form1</legend>
+                    <p>
+                        <label for="Name">Name:</label>
+                        <input type="text" name="Name" id="Name" placeholder="Name placeholder" autocomplete="on">
+                    </p>
+
+                    <p>
+                        <label for="Comment">Comment:</label>
+                        <input type="text" name="Comment" id="Comment" placeholder="Comment placeholder"
+                            autocomplete="on">
+                    </p>
+
+                    <p>
+                        <label for="Password">Password:</label>
+                        <input type="password" name="Password" id="Password">
+                    </p>
+
+                    <p>
+                        <label for="decade">Decade:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                    </p>
+
+                    <p>
+                        <label for="multlist">Multiple List using Select:</label>
+                        <select name="multlist" id="multlist" multiple size="3">
+                            <optgroup label="Option label group 1">
+                                <option value="multlistitem1">Item1</option>
+                                <option value="multlistitem2">Item2</option>
+                            </optgroup>
+                            <optgroup label="Option label group 2">
+                                <option value="multlistitem3">Item3</option>
+                            </optgroup>
+                            <option value="multlistitem4">Item4</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="multlist_input">Multiple List using Input:</label>
+                        <input type="text" name="multlist_input" id="multlist_input" list="multi_list">
+                        <datalist id="multi_list">
+                            <option value="Apple">
+                            <option value="Orange">
+                            <option value="Bannana">
+                            <option value="Strewberry">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Legend for Form2</legend>
+                    <p>
+                        <input type="radio" name="multchoice_radio" id="multchoice_radio_1" value="multchoice_radio_1">
+                        <label for="multchoice_radio_1">Choice 1</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="multchoice_radio" id="multchoice_radio_2" value="multchoice_radio_2">
+                        <label for="multchoice_radio_2">Choice 2</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="multchoice_radio" id="multchoice_radio_3" value="multchoice_radio_3">
+                        <label for="multchoice_radio_3">Choice 3</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Legend for Form3</legend>
+                    <p>
+                        <input type="checkbox" name="multichoice_checkbox" id="multchoice_checkbox_1" value="multchoice_checkbox_1">
+                        <label for="multchoice_checkbox_1">Checkbox 1</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="multichoice_checkbox" id="multchoice_checkbox_2" value="multchoice_checkbox_2">
+                        <label for="multchoice_checkbox_2">Checkbox 2</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="multichoice_checkbox" id="multchoice_checkbox_3" value="multchoice_checkbox_3">
+                        <label for="multchoice_checkbox_3">Checkbox 3</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Legend for Messagebox</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        &lt;&lt;&lt; &copy; Ronald Chung &gt;&gt;&gt;
+        <p><a href="#">Back to Top</a></p>
+    </footer>
+</body>
+
+</html>
